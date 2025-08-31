@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class QuickSortExample {
     public static void main(String[] args) {
-        System.out.println("Hello and welcome!");
+        System.out.println("Hello and welcome to QuickSortExample!");
         int[] arr = {8, 5, 3, 2, 7, 0, 1, 4, 6, 9};
         System.out.println("Original Array");
         printArrayElem(arr);
@@ -21,7 +21,6 @@ public class QuickSortExample {
     private static void performQuickSort(int[] arr, int lowIndex, int highIndex) {
         if (lowIndex < highIndex) {
             int partitionIndex = partition(arr, lowIndex, highIndex);
-            System.out.println("partIndex is = " + partitionIndex);
             performQuickSort(arr, lowIndex, partitionIndex - 1);
             performQuickSort(arr, partitionIndex + 1, highIndex);
         }
